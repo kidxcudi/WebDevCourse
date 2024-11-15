@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    background-color: #d9eed9;
+    color: rgb(0, 0, 0);
+    justify-items: center;
+    padding: 2.6rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+nav ul{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    list-style: none;
+}
+
+li {
+    padding: 0.75rem 1.75rem;
+    margin-top: 0.2rem;
+}
+
+
+li a{
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+li:hover {
+    background-color: #9f9f9f23;
+    border-radius: 0.5rem;
+}
+    
+main {
+    margin: auto;
+    padding: 0 2rem 2.5rem;
+}
+
+main > h2 {
+    font-size: 1.5rem;
+    color: rgb(66, 66, 66);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.5;
+    margin: auto;
+}
+
+
+.product {
+    padding: 1rem 1rem 2.5rem;
+    margin: 2rem auto;
+    width: min-content;
+    background-color: #fbfbfb;
+    border-radius: 0.6rem;
+    box-shadow: rgba(216, 215, 215, 0.599) 0px 0px 10px 1px;
+}
+
+
+.product > h2 {
+    margin: 0.7rem;
+    font-size: 1.4rem;
+    color: rgb(46, 46, 46);
+}
+
+.product p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #8d8d8d;
+    line-height: 1.25;
+}
+
+p.price {
+    font-size: 1.3rem;
+    color: #64a965;
+    margin-top: 0.6rem;
+}
+
+img {
+    border-radius: 2.5%;
+} 
+
+footer {
+    padding: 1.25rem 1rem 1rem;
+    background-color: #124314;
+    color: #f8f8f8;
+    text-align: center;
+}
+
+
+/* tablet view */
+@media screen and (min-width: 540px) {
+    *{
+        font-size: 18px;
+    }
+
+    nav ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main > h2 {
+        text-align: left;
+        margin-top: 1rem;
+    }
+
+    .product-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }    
+
+    .product {
+        padding: 0.8rem 0.8rem 2rem;
+    }
+}
+
+
+/* desktop view */
+@media screen and (min-width: 1024px) {
+    *{
+        font-size: 20px;
+    }
+
+    main {
+        max-width: 80%;
+    }
+}
